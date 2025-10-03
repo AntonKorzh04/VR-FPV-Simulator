@@ -13,4 +13,8 @@
 ## MVP
 **Управление FPV дроном от первого лица с реалистичной физикой.**
 
+Какой то готовый ассет с физикой полета и модельками, буду тестить в ветке [fpv-drone-asset-test](https://github.com/AntonKorzh04/VR-FPV-Simulator/tree/fpv-drone-asset-test)
+
+[Ссылка на ассет](https://assetstore.unity.com/packages/tools/physics/yue-ultimate-fpv-drone-physics-231651?srsltid=AfmBOoobkB4T_d7VfQihVp8_CdPf12H9p-6aMiq2RVd97Z4F2NjPEYzd#publisher)
+
 
