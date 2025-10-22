@@ -4,15 +4,15 @@ using UnityEngine.XR;
 public class FPVDroneController : MonoBehaviour
 {
     [Header("Drone Physics")]
-    public float thrustForce = 40f;
-    public float pitchForce = 35f;
-    public float rollForce = 35f;
-    public float yawForce = 20f;
-    public float movementForce = 25f; // НОВЫЙ ПАРАМЕТР - сила движения
+    public float thrustForce = 60f;
+    public float pitchForce = 50f;
+    public float rollForce = 50f;
+    public float yawForce = 30f;
+    public float movementForce = 280f; // НОВЫЙ ПАРАМЕТР - сила движения
 
     [Header("Stabilization")]
     public bool autoStabilize = true;
-    public float stabilizationStrength = 2f;
+    public float stabilizationStrength = 1.5f;
 
     private Rigidbody rb;
     private Vector2 leftStick;
@@ -26,7 +26,7 @@ public class FPVDroneController : MonoBehaviour
         {
             rb.mass = 1f;
             rb.drag = 0.8f;
-            rb.angularDrag = 1.5f;
+            rb.angularDrag = 0.8f;
             rb.useGravity = true;
         }
     }
