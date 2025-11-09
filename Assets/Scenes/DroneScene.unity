@@ -272,7 +272,7 @@ MonoBehaviour:
   recoveryThreshold: 30
   recoveryStrength: 8
   userOverrideStrength: 2
-  initialRotation: {x: 0, y: 0, z: 0}
+  initialRotation: {x: -90, y: 0, z: 0}
 --- !u!4 &22989451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
@@ -2179,14 +2179,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312123380}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.0516, z: 0.0364}
   m_LocalScale: {x: 0.01, y: 0.010000011, z: 0.0050319526}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 660300560}
   m_Father: {fileID: 22989451}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &312123382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4646,42 +4646,42 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -223.8
+      value: -224.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.8
+      value: 65.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.8
+      value: -43.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.3422846
+      value: 0.33956933
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.3368322
+      value: -0.33956933
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6251955
+      value: -0.620236
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6152365
+      value: -0.620236
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.08
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0b7a67b4111bde4f91f4fe57bc7f706,
         type: 3}
@@ -4914,8 +4914,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660300559}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 17.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9705,9 +9705,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1433055413}
   - component: {fileID: 1433055414}
+  - component: {fileID: 1433055415}
   m_Layer: 0
   m_Name: ShipSpawnManager
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9745,6 +9746,20 @@ MonoBehaviour:
   spawnAreaSize: {x: 361.3, y: 0, z: -1384.3}
   shipRotation: {x: -90, y: 0, z: 0}
   numberOfShips: 2
+--- !u!114 &1433055415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433055412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09eb0e4618e20b445bc4e346f77638f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 1000010823978654, guid: 3228a22491941734bb83ad691d17fcb9,
+    type: 3}
 --- !u!1 &1439252559
 GameObject:
   m_ObjectHideFlags: 0
@@ -15876,6 +15891,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8591754564633880162, guid: 26446e7f373d5204a905367cc2b40daa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7042791741084214604, guid: 26446e7f373d5204a905367cc2b40daa,
         type: 3}
       propertyPath: m_LocalPosition.x

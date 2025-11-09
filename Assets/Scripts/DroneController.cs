@@ -458,4 +458,21 @@ public class FPVDroneController : MonoBehaviour
         upsideDownTimer = 1f; // Принудительно устанавливаем таймер
         Debug.Log("?? АВАРИЙНЫЙ ПЕРЕВОРОТ АКТИВИРОВАН");
     }
+    //
+    void OnCollisionEnter(Collision collision)
+    {
+        // Если столкнулись с кораблем - взрываем его
+        if (collision.gameObject.CompareTag("Ship"))
+        {
+            Debug.Log($"?? ДРОН КОСНУЛСЯ {collision.gameObject.name}!");
+
+            // Ищем скрипт взрыва на корабле и взрываем
+            ShipExplosion ship = collision.gameObject.GetComponent<ShipExplosion>();
+            if (ship != null)
+            {
+                ship.ExplodeShip();
+            }
+        }
+    }
+    //
 }
